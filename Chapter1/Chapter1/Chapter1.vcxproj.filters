@@ -13,13 +13,38 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="资源文件\Shaders">
+      <UniqueIdentifier>{cf54103d-3276-45c4-a1a0-c9979948d544}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件\Shaders\Uniform">
+      <UniqueIdentifier>{004f43ab-cf06-4e45-b46c-79f1e551833a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件\Shaders\VertexAttr">
+      <UniqueIdentifier>{440fd15d-1fd3-4966-b35e-638dcb211a92}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="FirstWindow.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="glad.c">
       <Filter>头文件</Filter>
     </ClCompile>
+    <ClCompile Include="shader.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FirstShaderCompiler.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="shader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shaders\first.fs">
+      <Filter>资源文件\Shaders\Uniform</Filter>
+    </None>
+    <None Include="Shaders\first.vs">
+      <Filter>资源文件\Shaders\Uniform</Filter>
+    </None>
   </ItemGroup>
 </Project>
