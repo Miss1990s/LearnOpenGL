@@ -1,5 +1,3 @@
-﻿  FirstShaderCompiler.cpp
-j:\homework\learnopengl\firstopengl\chapter1\chapter1\firstshadercompiler.cpp(99): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-j:\homework\learnopengl\firstopengl\chapter1\chapter1\firstshadercompiler.cpp(202): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+﻿  FirstTexture.cpp
   Chapter1.vcxproj -> J:\Homework\LearnOpenGL\FirstOpenGL\Chapter1\Debug\Chapter1.exe
   Chapter1.vcxproj -> J:\Homework\LearnOpenGL\FirstOpenGL\Chapter1\Debug\Chapter1.pdb (Partial PDB)
