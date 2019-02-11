@@ -21,4 +21,5 @@ public:
 	void setFloat(const std::string &name, float value) const;
 
 	void set4f(const std::string & name, float v1, float v2, float v3, float v4) const;
+	void setMat4fv(const std::string & name, const float * value_ptr) const;
 };
