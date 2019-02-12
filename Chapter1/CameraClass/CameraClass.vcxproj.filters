@@ -30,15 +30,15 @@
     <ClCompile Include="..\..\Common\stb_image.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Camera.cpp">
+    <ClCompile Include="CameraDemo.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Shaders\coordinate.vs">
+    <None Include="Shaders\camera.fs">
       <Filter>资源文件\Shaders</Filter>
     </None>
-    <None Include="Shaders\coordinate.fs">
+    <None Include="Shaders\camera.vs">
       <Filter>资源文件\Shaders</Filter>
     </None>
   </ItemGroup>
