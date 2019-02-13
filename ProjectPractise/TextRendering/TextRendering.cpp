@@ -63,9 +63,6 @@ int main()
 	glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
 
 
-	// tell GLFW to capture our mouse
-	glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
-
 	// glad: load all OpenGL function pointers
 	// ---------------------------------------
 	if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
@@ -107,14 +104,16 @@ int main()
 		cout << "ERROR::FREETYPE: Could not init FreeType Library" << endl;
 	FT_Face face;
 	if (FT_New_Face(ft, "fonts/arial.ttf", 0, &face))
-		
+		std::cout << "ERROR::FREETYPE: Failed to load font" << std::endl;
+
+	FT_Set_Pixel_Sizes(face, 0, 48);
 
 	glPixelStorei(GL_UNPACK_ALIGNMENT, 1);//禁用字节对齐限制
 	for (GLubyte c = 0; c < 128; c++) {
 		//加载字符字形
 		if (FT_Load_Char(face, c, FT_LOAD_RENDER))
 		{
-			cout << "ERROR::FREETYPE: Failed to load font" << endl;
+			std::cout << "ERROR::FREETYTPE: Failed to load Glyph" << std::endl;
 			continue;
 		}
 		//生成纹理
@@ -137,7 +136,6 @@ int main()
 	}
 	FT_Done_Face(face);
 	FT_Done_FreeType(ft);
-
 
 	ourShader.use();
 	glm::mat4 projection = glm::ortho(0.0f, 800.0f, 0.0f, 600.0f);

@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{1958856A-314A-42FE-9205-2EB3194C6C2C}</ProjectGuid>
+    <ProjectGuid>{585720FF-8097-4EEB-8AB3-3A689B8E858B}</ProjectGuid>
     <RootNamespace>FirstTexture</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
