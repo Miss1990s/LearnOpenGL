@@ -35,10 +35,10 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Shaders\camera.fs">
+    <None Include="Shaders\text.fs">
       <Filter>资源文件\Shaders</Filter>
     </None>
-    <None Include="Shaders\camera.vs">
+    <None Include="Shaders\text.vs">
       <Filter>资源文件\Shaders</Filter>
     </None>
   </ItemGroup>
